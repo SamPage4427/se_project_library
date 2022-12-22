@@ -126,6 +126,8 @@
 /* Add the CSS rule for your new class here. Make sure to place it before .card: parents should precede their children */
 .staff__cards {
   list-style-type: none;
+  margin-bottom: 0;
+  padding: 0;
   max-width: 760px;
   margin: 68px auto;
   display: flex;
@@ -343,12 +345,12 @@
   display: flex;
   justify-content: center;
   gap: 40px;
-  flex-basis: auto;
 }
 
 .step {
   /* Add styles */
   width: 220px;
+  flex-basis: auto;
 }
 
 .step__title {
@@ -395,8 +397,7 @@
   max-width: 660px;
   display: flex;
   flex-direction: column;
-  position: relative;
-  left: 120px;
+  margin-left: 120px;
   gap: 32px;
   z-index: 1;
 }
