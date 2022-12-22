@@ -21,7 +21,7 @@
           <!-- Putting navigation links in a list is supposed to be the best practice of writing the semantic code since it allows screen readers to pause between each link instead of reading all the links as a sentence. -->
           <ul class="nav__links">
             <li>
-              <a class="nav__link" href="#staff-picks">Staff picks</a>
+              <a class="nav__link" href="#staff-picks">Reader picks</a>
             </li>
             <li>
               <a class="nav__link" href="#events">Events</a>
@@ -58,75 +58,60 @@
 
       <main class="content">
         <section class="staff" id="staff-picks">
-          <h2 class="staff__title">Staff picks</h2>
+          <h2 class="staff__title">Reader picks</h2>
           <p class="staff__subtitle">That our readers love</p>
           <!-- The ul tag (unordered list) is used here as it is a collection of cards for which the order doesn't really matter. -->
-          <ul>
+          <ul class="staff__cards">
             <li class="card">
               <div class="card__content">
-                <h3 class="card__title">Introduction to Algorithms</h3>
+                <h3 class="card__title">Halo: Fall of Reach</h3>
                 <p class="card__text">
-                  The name of this book is self-explanatory; it's a proper
-                  introduction to algorithms! Introduction to Algorithms, or
-                  CLRS, in reference to the authors' last names, goes in-depth
-                  and covers a range of algorithms across several self-contained
-                  chapters.
+                  The New York Times bestselling origin story of the famed
+                  Microsoft Xbox game, Halo. It starts the origin of the main
+                  character, Master Chief and introduces more background into
+                  one of the best selling Xbox game series.
                 </p>
-                <p class="card__footer">
-                  Thomas H. Cormen, Charles E. Leiserson, Ronald L. Rivest,
-                  Clifford Stein
-                </p>
+                <p class="card__footer">Eric Nylund</p>
               </div>
             </li>
 
             <li class="card">
               <div class="card__content">
-                <h3 class="card__title">
-                  The Structure and Interpretation of Computer Programs (SICP)
-                </h3>
+                <h3 class="card__title">Gears of War: Aspho Fields</h3>
                 <p class="card__text">
-                  This is one of the best books for learning the fundamentals of
-                  programming. Featured by MIT in one of their foundational
-                  programming courses, SICP is a general-purpose programming
-                  book that uses Scheme to illustrate various programming
-                  concepts.
+                  The official prequel to the award-winning Xbox game, Gears of
+                  War. Giving an in-depth look into the events before the Gears
+                  of War videogame series and what lead up to the catastrophies
+                  that take place during the story of Marcus Fenix and Delta
+                  Squad.
                 </p>
-                <p class="card__footer">
-                  Harold Abelson, Gerald Jay Sussman, Julie Sussman
-                </p>
+                <p class="card__footer">Karen Traviss</p>
               </div>
             </li>
 
             <li class="card">
               <div class="card__content">
-                <h3 class="card__title">
-                  The Clean Coder: A Code of Conduct for Professional
-                  Programmers
-                </h3>
+                <h3 class="card__title">Legends of the Duskwalker: Three</h3>
                 <p class="card__text">
-                  Compiled by seasoned software engineer and author Robert C.
-                  Martin (also known as Uncle Bob), this book covers the
-                  techniques and tools of true software craftsmanship. It
-                  explains how to write clean code and demonstrates how to
-                  cultivate the attitude of a skilled, professional programmer.
+                  The first book of the Legend of the Duskwalker series. Set
+                  after the world collapsed, Three, a traveling gun for hire,
+                  protects a woman and her son across the plains in search of a
+                  mythic oasis.
                 </p>
-                <p class="card__footer">Steve McConnell</p>
+                <p class="card__footer">Jay Posey</p>
               </div>
             </li>
 
             <li class="card">
               <div class="card__content">
-                <h3 class="card__title">
-                  Code Complete: A Practical Handbook of Software Construction
-                </h3>
+                <h3 class="card__title">Harry Potter</h3>
                 <p class="card__text">
-                  Want to know how to write robust code irrespective of the
-                  architecture behind your chosen programming language? Then
-                  consider reading Code Complete: A Practical Handbook of
-                  Software Construction. It comprehensively covers everything
-                  related to good code structure.
+                  The classic series that inspired both adults and children. The
+                  7 fantasy novels chronicle the lives of Harry Potter and his
+                  friends through their wizarding journeys at Hogwarts, a school
+                  for witchcraft and wizardry.
                 </p>
-                <p class="card__footer">Steve McConnell</p>
+                <p class="card__footer">J.K. Rowling</p>
               </div>
             </li>
           </ul>
@@ -187,20 +172,20 @@
               />
             </div>
             <div class="person person_name_cannon">
-              <p class="person__caption">Annie Jump Cannon</p>
               <img
                 src="./images/person_cannon.png"
                 alt="annie-cannon"
                 class="person__image person__image_size_m"
               />
+              <p class="person__caption">Annie Jump Cannon</p>
             </div>
             <div class="person person_name_mitchell">
-              <p class="person__caption">Maria Mitchell</p>
               <img
                 src="./images/person_mitchell.png"
                 alt="maria-mitchell"
                 class="person__image person__image_size_s"
               />
+              <p class="person__caption">Maria Mitchell</p>
             </div>
             <div class="person person_name_tarter">
               <p class="person__caption">Jill Tarter</p>
@@ -289,11 +274,51 @@
               the American Geophysical Union.
             </p>
           </div>
-          <!-- <div class="about__circle"></div> -->
+          <div class="about__circle"></div>
         </section>
       </main>
       <footer class="footer" id="footer">
         <!-- The time to mark up the footer has come, you can do it 💪 -->
+        <div class="footer__columns">
+          <div class="footer__column">
+            <img
+              src="./images/logo_practicum.svg"
+              alt="practicum-logo"
+              class="footer__logo"
+            />
+          </div>
+          <div class="footer__column footer__column_content_hours">
+            <h4 class="footer__column-heading">Hours</h4>
+            <ul class="footer__list">
+              <li class="footer__list-item">Weekdays: 9am - 8pm</li>
+              <li class="footer__list-item">Weekends: 10am - 6pm</li>
+            </ul>
+          </div>
+          <div class="footer__column footer__column_content_social">
+            <h4 class="footer__column-heading">Social Media</h4>
+            <ul class="footer__list">
+              <li class="footer__list-item">
+                <a href="#" class="footer__column-link"
+                  ><img
+                    src="./images/facebook_white.svg"
+                    alt="facebook-icon"
+                    class="footer__social-icon"
+                  />Facebook</a
+                >
+              </li>
+              <li class="footer__list-item">
+                <a href="#" class="footer__column-link"
+                  ><img
+                    src="./images/instagram_white.svg"
+                    alt="instagram-icon"
+                    class="footer__social-icon"
+                  />Instagram</a
+                >
+              </li>
+            </ul>
+          </div>
+        </div>
+        <p class="footer__copyrights">&copy; 2022 Sam Page</p>
       </footer>
     </div>
   </body>
